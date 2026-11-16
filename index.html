@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATB Groupe — Audit technique &amp; SEO du site</title>
+<meta name="description" content="Audit interne du site atbgroupe.com : technique, performance, référencement Google et visibilité dans les IA. Constat, propositions, preuves.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@300;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/scene-v2-1440.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress"></div>
+
+<header class="top">
+  <a class="brand" href="#debut"><span class="dot"></span>Audit ATB Groupe</a>
+  <span class="doc">Technique &amp; SEO · usage interne</span>
+  <span class="client">atbgroupe.com</span>
+</header>
+
+<nav class="dots" aria-label="Sections">
+  <a href="#debut"><span>Début</span></a>
+  <a href="#constat"><span>Constat</span></a>
+  <a href="#concurrence"><span>Concurrents</span></a>
+  <a href="#technique"><span>Technique</span></a>
+  <a href="#seo"><span>SEO &amp; IA</span></a>
+  <a href="#propositions"><span>Propositions</span></a>
+  <a href="#articles"><span>Articles</span></a>
+  <a href="#preuves"><span>Preuves</span></a>
+  <a href="#besoins"><span>Ce qu'il faut</span></a>
+  <a href="#equipe"><span>Qui a fait ça</span></a>
+</nav>
+
+<!-- 1. DEBUT -->
+<section class="hero" id="debut">
+  <div class="bg" style="background-image:url(img/scene-v2-1440.webp)"></div>
+  <div class="wrap">
+    <span class="duo rv">Audit interne · technique + référencement + IA</span>
+    <h1 class="rv d1">Le site ATB Groupe<span class="lt">est solide côté métier, invisible côté recherche</span></h1>
+    <p class="sub rv d2">Ce document répond au brief : technologies, vitesse, référencement Google, visibilité dans ChatGPT et les aperçus IA, structure du contenu, limites techniques. Chaque constat est suivi d'une proposition avec son intérêt, sa difficulté et son bénéfice attendu. Pas de refonte du design — le site a été refait récemment, on corrige le fonctionnement.</p>
+    <div class="hstats">
+      <div class="glass rv d2"><b class="grad">3</b><span>requêtes où Google affiche le site (sur ~1 900 pour le leader du secteur)</span></div>
+      <div class="glass rv d2"><b class="grad">≈ 7</b><span>visiteurs/mois venus de la recherche, estimation Ahrefs</span></div>
+      <div class="glass rv d3"><b class="grad">48–64</b><span>score de vitesse mobile sur 100 (Google), objectif 90+</span></div>
+      <div class="glass rv d3"><b class="grad">0–6</b><span>difficulté Ahrefs des requêtes du secteur — la concurrence ne fait presque pas de SEO</span></div>
+    </div>
+    <a class="btn rv d4" href="#constat">Voir le constat</a>
+  </div>
+</section>
+
+<!-- 2. CONSTAT -->
+<section id="constat">
+  <div class="water">Constat</div>
+  <div class="wrap">
+    <span class="tag rv">Où en est le site</span>
+    <h2 class="rv">Une entreprise solide<span class="lt">un site que la recherche ne voit pas</span></h2>
+    <div class="line"></div>
+
+    <div class="grid g3">
+      <div class="glass kpi bad rv"><span class="k">Requêtes indexées</span><b>3</b><p>"atb groupe", "moteur atb", "analyse vibratoire spectrale". Le leader du secteur (Motralec) en a 1 900.</p></div>
+      <div class="glass kpi bad rv d1"><span class="k">Top 3 Google</span><b>2</b><p>Les deux positions sont des requêtes de marque, pas de service. Le leader en a 748.</p></div>
+      <div class="glass kpi bad rv d2"><span class="k">Mentions dans les réponses IA</span><b>1</b><p>Base Ahrefs. Le leader en a 1 400.</p></div>
+    </div>
+
+    <div class="glass verdict rv">
+      <p><b>En clair :</b> quand un acheteur tape « réparation moteur électrique » ou « bobinage moteur » + sa ville, Google n'a rien à montrer d'ATB — alors que l'entreprise a 4 agences, un stock de plus de 2 000 moteurs et des certifications que la concurrence n'a pas. Le problème n'est pas le design ni la réputation : c'est qu'aucune page du site ne répond à ces questions, et que Google ne comprend pas bien ce qu'il a sous les yeux (pas de balise titre/description correcte, pas de carte du site, des adresses qui changent et finissent en erreur 404).</p>
+    </div>
+
+    <h3 class="rv sub-h" style="margin-top:36px">Par ville (Google Maps, résultats Google.fr et ChatGPT)</h3>
+    <div class="glass rv" style="padding:22px;margin-top:14px;overflow-x:auto">
+      <table class="citytable">
+        <tr><th>Ville</th><th>Carte Google</th><th>Site dans Google</th><th>Qui passe devant</th></tr>
+        <tr><td><b>Rouen</b></td><td>1ʳᵉ place</td><td>3ᵉ place</td><td>DTMI — 1ʳᵉ place sur son site, « 24H/24 7J/7 » affiché</td></tr>
+        <tr><td><b>Évreux</b></td><td>1ʳᵉ place</td><td>1ʳᵉ place</td><td>— (ATB tient la position)</td></tr>
+        <tr><td><b>Caen</b></td><td>2ᵉ place</td><td>hors 1ʳᵉ page</td><td>Chaplain et Mirey, visibles sur leur propre site</td></tr>
+        <tr><td><b>Lille (Seclin)</b></td><td>8ᵉ place</td><td>non visible</td><td>Rossini Pierre (note 5,0), Espace Moteurs, SDB</td></tr>
+      </table>
+    </div>
+    <p class="note rv">Les gens tapent déjà le nom ATB dans Google (« ATB Rouen », « Catalogue moteur ATB ») — la notoriété existe. Ce qui manque, ce sont les nouvelles recherches : service + ville.</p>
+  </div>
+</section>
+
+<!-- 3. CONCURRENCE -->
+<section id="concurrence">
+  <div class="bg" style="background-image:url(img/services-bg-v2-1440.webp)"></div>
+  <div class="water">Concurrents</div>
+  <div class="wrap">
+    <span class="tag rv">Qui est devant et pourquoi</span>
+    <h2 class="rv">La barre est basse<span class="lt">les leaders gagnent avec des pages simples</span></h2>
+    <div class="line"></div>
+    <div class="grid g2">
+      <div class="glass comp rv">
+        <div class="comp-h"><b>Motralec</b><span class="pl">leader · 4 500 visites/mois</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>Articles-guides ("montage étoile ou triangle") et pages par marque (Wilo, Grundfos…). C'est ce qui amène l'essentiel du trafic.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Le même type d'articles, mais écrits par les techniciens ATB, avec un lien vers l'agence la plus proche.</p></div>
+      </div>
+      <div class="glass comp rv d1">
+        <div class="comp-h"><b>TCA Industries</b><span class="pl">cité 17× par l'IA (Ahrefs)</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>Pages dédiées "bobinage" et "réparation moteur électrique", téléphone en un clic, devis gratuit, balisage LocalBusiness complet.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Le meilleur modèle à copier dans le secteur — structure simple, reproductible sans refonte.</p></div>
+      </div>
+      <div class="glass comp rv">
+        <div class="comp-h"><b>Rossini Pierre (Lille)</b><span class="pl">1ᵉʳ chez ChatGPT à Lille</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>Un site simple, sans aucune technique avancée : juste "Lille" dans le titre et le H1, une page "Réparation moteur électrique", 6 avis à 5,0.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Même recette pour l'agence de Seclin : titre + page dédiée + avis clients.</p></div>
+      </div>
+      <div class="glass comp rv d1">
+        <div class="comp-h"><b>DTMI (Rouen)</b><span class="pl">1ʳᵉ place sur son site à Rouen</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>"24H/24 &amp; 7J/7" affiché directement dans la description Google.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Afficher la même urgence si ATB a (ou met en place) une astreinte — sinon ne pas le promettre.</p></div>
+      </div>
+      <div class="glass comp rv">
+        <div class="comp-h"><b>Decharenton.fr (Normandie, Flers)</b><span class="pl">actualités tenues à jour</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>Une page dédiée "rebobinage moteur" et des actualités de groupe publiées régulièrement.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Le modèle à suivre pour la page rebobinage (proposition 6) ; nos propres articles (proposition 10) jouent le même rôle.</p></div>
+      </div>
+      <div class="glass comp rv d1">
+        <div class="comp-h"><b>Chaplain.fr (Caen, Grand Ouest)</b><span class="pl">chiffres forts affichés</span></div>
+        <div class="comp-r"><span class="lbl">Pourquoi il est devant</span><p>Page "Expert de la réparation industrielle à Caen" avec des chiffres vérifiables : 85 ans, 35 techniciens itinérants.</p></div>
+        <div class="comp-r win"><span class="lbl">Ce qu'on peut faire</span><p>Même logique pour la page Caen (proposition 7) : des chiffres exacts plutôt qu'une promesse vague.</p></div>
+      </div>
+    </div>
+    <div class="glass verdict rv" style="margin-top:16px">
+      <p><b>À retenir :</b> aucun concurrent n'a 4 agences, un stock de plus de 2 000 moteurs, un partenariat ABB et des certifications Saqr-ATEX/MASE à la fois. ATB a plus d'arguments que tous ses concurrents réunis — il faut juste les montrer à la recherche.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. TECHNIQUE (PARTIE 1) -->
+<section id="technique">
+  <div class="water">Technique</div>
+  <div class="wrap">
+    <span class="tag rv">Partie 1 — Technique &amp; performance</span>
+    <h2 class="rv">Ce qui tourne sous le capot<span class="lt">et ce qui ralentit la page</span></h2>
+    <div class="line"></div>
+
+    <div class="glass panel rv">
+      <span class="sub-lbl">Serveur et CMS</span>
+      <p>Joomla 5.4.10 (version récente), PHP 8.3, nginx derrière Plesk, hébergement OVH. Rien à reprocher ici : c'est à jour.</p>
+      <span class="sub-lbl" style="margin-top:18px;display:block">Habillage</span>
+      <p>Les pages sont montées avec SP Page Builder sur un thème Shape5 "Charity" ancien et surchargé : jQuery UI, deux jeux de Bootstrap, trois jeux d'icônes et la police Open Sans chargée trois fois. Sur la page d'accueil : 25 fichiers CSS, 31 fichiers JS, et 156 Ko de style écrits directement dans le code de la page.</p>
+      <span class="sub-lbl" style="margin-top:18px;display:block">Formulaires et fenêtres</span>
+      <p>Formulaire de contact sur ChronoForms, fenêtres surgissantes EngageBox, éditeur JCE Pro. La page d'accueil liste encore l'auteur par défaut Joomla <code>Super User</code> dans son code — jamais renommé, fuite d'information mineure mais gratuite.</p>
+    </div>
+
+    <div class="glass panel rv d1">
+      <span class="sub-lbl">Vitesse (Google PageSpeed Insights, page d'accueil)</span>
+      <table class="metrics-table">
+        <tr><th></th><th>Mobile</th><th>Ordinateur</th><th>Objectif Google</th></tr>
+        <tr><td>Score global</td><td class="bad">48–64 / 100</td><td>65–92 / 100</td><td>90+</td></tr>
+        <tr><td>Premier bloc visible (LCP)</td><td class="bad">12,0 – 15,6 s</td><td>2,2 – 2,6 s</td><td>≤ 2,5 s</td></tr>
+        <tr><td>Décalage visuel (CLS)</td><td class="bad">0,43 – 0,47</td><td>0,50</td><td>≤ 0,1</td></tr>
+        <tr><td>Poids de la page</td><td colspan="2">3,6 Mo</td><td>—</td></tr>
+      </table>
+      <p style="margin-top:14px;font-size:15px;color:var(--ink-2)"><b>Pourquoi c'est lent :</b> la page d'accueil est un diaporama de 5 photos (908 Ko) posées en <code>background-image</code> sur un <code>&lt;div&gt;</code> plutôt qu'en <code>&lt;img&gt;</code> — Google ne peut pas les précharger, et les 5 se chargent en même temps. Pas de WebP, pas de chargement différé, pas de cache de page (réponse serveur ≈ 1 s à chaque visite), aucun en-tête de cache sur les images et le CSS.</p>
+    </div>
+
+    <div class="glass panel rv d2">
+      <span class="sub-lbl">Sur mobile</span>
+      <p>Aucun numéro de téléphone n'est cliquable sur les 32 pages. Le menu mobile a des liens de 19 px de haut (la norme Google est 48 px). Pas de bouton "Contactez-nous" visible sur mobile. Le zoom par pincement est bloqué (<code>maximum-scale=1</code>).</p>
+    </div>
+
+    <div class="glass panel rv d3">
+      <span class="sub-lbl">Sécurité — note D sur Security Headers (snyk.io)</span>
+      <div class="chips">
+        <span class="on">Strict-Transport-Security ✓</span>
+        <span class="off">Content-Security-Policy ✗</span>
+        <span class="off">X-Frame-Options ✗</span>
+        <span class="off">X-Content-Type-Options ✗</span>
+        <span class="off">Referrer-Policy ✗</span>
+        <span class="off">Permissions-Policy ✗</span>
+      </div>
+      <p style="margin-top:14px">Le serveur expose en plus la version exacte de PHP (<code>X-Powered-By: PHP/8.3.36</code>) et le panneau d'hébergement (<code>PleskLin</code>) à qui veut la lire. L'accès <code>/administrator/</code> est ouvert à tous sans restriction d'IP. Rien de cassé, mais c'est une indication gratuite pour qui chercherait une faille — ça se corrige en une journée.</p>
+    </div>
+
+    <div class="callout rv"><b>Précision :</b> le validateur W3C remonte des erreurs HTML (attributs d'image mal formés, aucun titre H1 sur la page d'accueil et 5 autres pages, boutons codés comme de simples blocs). Ce sont des problèmes d'accessibilité et de robustesse du code — pas des facteurs de classement Google en eux-mêmes. Le H1 manquant, en revanche, compte pour le référencement et est traité dans la partie suivante.</p>
+    </div>
+
+    <div class="glass panel rv d4">
+      <span class="sub-lbl">Liste technique pour le développeur (16 tâches, groupées)</span>
+      <span class="sub-lbl" style="margin-top:14px;display:block;font-size:13px">Référencement technique</span>
+      <ul class="ok">
+        <li>Créer le sitemap.xml, l'ajouter au robots.txt et le soumettre à Search Console / Bing.</li>
+        <li>Débloquer <code>/components/</code>, <code>/modules/</code>, <code>/plugins/</code> dans le robots.txt.</li>
+        <li>301 + canonical sur les 5 doublons (index.php, /nos-produits/tous-nos-produits, /nos-services/tous-nos-services, /le-groupe/presentation, /le-groupe/les-certificats-d-economie-denergie, /component/content/article/199-contactez-nous).</li>
+        <li>301 depuis les anciennes adresses (/analyse-vibratoire-spectrale/, /certifications/, /telechargements/, /Intervention).</li>
+      </ul>
+      <span class="sub-lbl" style="margin-top:18px;display:block;font-size:13px">Vitesse</span>
+      <ul class="ok">
+        <li>Activer le cache de page (retirer <code>no-store, no-cache</code>).</li>
+        <li>En-têtes de cache statiques : CSS/JS/polices 1 an, images 30 jours.</li>
+        <li>Premier visuel en preload + <code>fetchpriority="high"</code>, le reste en lazy-load.</li>
+        <li>Convertir les images en WebP.</li>
+        <li>Regrouper/différer le JS ; retirer jQuery UI et les modules Bootstrap inutiles.</li>
+        <li>Un seul Open Sans auto-hébergé + un seul jeu d'icônes.</li>
+        <li>Retirer les deux requêtes d'images cassées (/images/top_row1.jpg, /images/bottom_row2.jpg — 404).</li>
+        <li>Viewport sans <code>maximum-scale=1</code>.</li>
+      </ul>
+      <span class="sub-lbl" style="margin-top:18px;display:block;font-size:13px">Sécurité</span>
+      <ul class="ok">
+        <li>Fermer <code>/administrator/</code> par IP ou mot de passe, ajouter la double authentification, retirer README.txt/htaccess.txt et les manifestes XML, masquer X-Powered-By.</li>
+        <li>Ajouter les en-têtes manquants : X-Frame-Options, X-Content-Type-Options, Referrer-Policy.</li>
+      </ul>
+      <span class="sub-lbl" style="margin-top:18px;display:block;font-size:13px">Contact &amp; données structurées</span>
+      <ul class="ok">
+        <li>Rendre les 4 numéros cliquables (<code>tel:</code>) et ajouter un bouton Contact dans le menu mobile.</li>
+        <li>JSON-LD Organization + LocalBusiness par agence, BreadcrumbList, JobPosting pour les offres d'emploi.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SEO & IA (PARTIE 2) -->
+<section id="seo">
+  <div class="bg" style="background-image:url(img/process-bg-1440.webp)"></div>
+  <div class="water">SEO</div>
+  <div class="wrap">
+    <span class="tag rv">Partie 2 — Référencement Google &amp; visibilité IA</span>
+    <h2 class="rv">Ce que Google et les IA<span class="lt">voient réellement du site</span></h2>
+    <div class="line"></div>
+
+    <div class="glass panel rv">
+      <span class="sub-lbl">Ce qui bloque Google</span>
+      <ul>
+        <li>Pas une seule page sur les services principaux : rebobinage, réparation moteur, dépannage urgent, réparation pompe, analyse vibratoire, moteur ATEX. Pas de page par ville.</li>
+        <li>Aucune balise meta description ni canonical sur les 32 pages. Titres d'onglet du type "ATB Groupe - &gt; Pompes" — ni service ni ville dedans.</li>
+        <li>Carte du site absente (sitemap.xml renvoie une erreur 404). Le robots.txt bloque <code>/components/</code>, où se trouvent les styles et scripts du constructeur de pages.</li>
+        <li>5 pages dupliquées sous deux adresses différentes. D'anciennes adresses (<code>/Intervention</code>, <code>/certifications/</code>…) renvoient une erreur 404 alors que d'autres sites y pointent encore — le poids de ces liens est perdu.</li>
+        <li>847 domaines pointent vers le site, mais ~80 % sont du spam automatique (comme partout dans ce secteur). Les vrais liens existent : futura-sciences.com, paris-normandie.fr, les salons SEPEM et CFIA, verif.com.</li>
+        <li>En 2024–2025, des pages étrangères de spam pharmaceutique sont apparues sur le domaine — signe probable de piratage. Elles renvoient toutes une erreur 404 aujourd'hui, mais une vérification des sanctions manuelles dans Search Console reste à faire dès l'accès obtenu.</li>
+        <li>32 adresses pour ~23 pages réellement uniques, dont 11 de moins de 300 mots : la page certifications tient en 46 mots, la page agences en 70 — juste des adresses, sans texte.</li>
+        <li>La seule requête hors marque où le site apparaît encore, « analyse vibratoire spectrale » (7ᵉ position Ahrefs), pointe vers l'ancienne adresse <code>/analyse-vibratoire-spectrale/</code> — en 404 : cette position est en train de se perdre.</li>
+      </ul>
+    </div>
+
+    <div class="glass panel rv d1">
+      <span class="sub-lbl">Visibilité dans les IA (ChatGPT, aperçus IA de Google)</span>
+      <p><b>ChatGPT</b> place ATB en premier sur une question en français pour un réparateur de moteur industriel à Rouen, Caen, Évreux ou Lille, avec les adresses et téléphones des 4 agences — devant DTMI, ERI ABEN, Decharenton et Rossini Pierre.</p>
+      <p style="margin-top:10px"><b>Les aperçus IA de Google</b> citent ATB à Rouen, Caen et Évreux, mais pas à Lille. Les données viennent de LinkedIn, de l'annuaire sous-traiter.com et de data.gouv.fr — très peu du site lui-même, qui n'a ni réponses courtes, ni tableaux, ni données structurées à offrir.</p>
+      <div class="callout" style="margin-top:14px"><b>Ce qui manque :</b> des faits identiques partout (ancienneté, stock, certifications), des réponses aux questions courantes (délai de réparation, rebobiner ou remplacer, zone d'intervention), et un balisage Organization / LocalBusiness par agence. Aucun robot d'IA n'est bloqué par le site — c'est déjà une bonne nouvelle.</p>
+      </div>
+    </div>
+
+    <div class="glass panel rv d2">
+      <span class="sub-lbl">Des faits qui se contredisent</span>
+      <p>L'ancienneté de l'entreprise est annoncée différemment selon les pages : 30, 40, 60 et 70 ans. Le stock est décrit comme "0,25–560 kW" sur la page d'accueil et "0,18–250 kW, plus de 2 000 moteurs" sur la page moteurs. ChatGPT reprend déjà "plus de 40 ans" d'un côté et "60 ans" de l'autre — un acheteur et une IA voient la même incohérence.</p>
+    </div>
+
+    <div class="glass panel rv d3">
+      <span class="sub-lbl">Fiches Google Maps &amp; annuaires</span>
+      <table class="metrics-table">
+        <tr><th>Agence</th><th>Nom affiché</th><th>Avis</th><th>Problème</th></tr>
+        <tr><td>Rouen</td><td>Atelier Regional de Bobinage</td><td>4,6 (11)</td><td class="ok">rien à signaler, ajouter photos et avis récents</td></tr>
+        <tr><td>Caen</td><td>A.R.B. Atelier Régional…</td><td>4,5 (2, anciens)</td><td class="bad">fiche non revendiquée, catégorie "magasin d'électroménager"</td></tr>
+        <tr><td>Évreux</td><td>Atelier Technique de Bobinage</td><td>4,2 (5)</td><td class="bad">catégorie "fabricant d'électronique"</td></tr>
+        <tr><td>Lille (Seclin)</td><td>Atelier Technique De Bobinage (Atb)</td><td>3,8 (4)</td><td class="bad">catégorie "fournisseur d'équipements électriques"</td></tr>
+      </table>
+      <p style="margin-top:12px">Les volumes de recherche restent modestes car c'est du B2B (ex. "réparation moteur électrique" : 150–300 recherches/mois en France, les requêtes avec une ville : 0 à 10 chacune) — mais un client industriel reste des années, et ce sont justement les requêtes les plus "chaudes".</p>
+    </div>
+
+    <div class="glass panel rv d4">
+      <span class="sub-lbl">Ce que les gens cherchent (France, volumes mensuels Ahrefs)</span>
+      <table class="metrics-table">
+        <tr><th>Requête</th><th>Recherches/mois</th></tr>
+        <tr><td>moteur électrique</td><td>5 800</td></tr>
+        <tr><td>moteur asynchrone / triphasé</td><td>2 000 / 1 100</td></tr>
+        <tr><td>maintenance prédictive</td><td>1 300</td></tr>
+        <tr><td>variateur de fréquence</td><td>1 200</td></tr>
+        <tr><td>motoréducteur</td><td>700</td></tr>
+        <tr><td>bobinage moteur (+ électrique)</td><td>350 + 250</td></tr>
+        <tr><td>réparation moteur électrique (variantes)</td><td>150 + 300</td></tr>
+        <tr><td>analyse vibratoire</td><td>250</td></tr>
+        <tr><td>moteur WEG / Siemens / ABB / Leroy-Somer</td><td>150 / 150 / 100 / 100</td></tr>
+        <tr><td>moteur ATEX</td><td>80</td></tr>
+        <tr><td>chaque requête + ville (ex. "bobinage Rouen")</td><td>0 à 10</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PROPOSITIONS -->
+<section id="propositions">
+  <div class="bg" style="background-image:url(img/cta-bg-1440.webp)"></div>
+  <div class="water">Actions</div>
+  <div class="wrap">
+    <span class="tag rv">Ce qu'on propose</span>
+    <h2 class="rv">Dix propositions concrètes<span class="lt">dans le design actuel, sans refonte</span></h2>
+    <div class="line"></div>
+    <p class="lead rv">Classées par difficulté (faible : quelques heures à 2 jours / moyenne : 3 à 7 jours / continu : contenu à produire régulièrement) et par bénéfice attendu sur les demandes entrantes.</p>
+
+    <div class="glass rv" style="padding:10px 22px 22px;margin-top:18px;overflow-x:auto">
+      <table class="proptable">
+        <tr><th>#</th><th>Proposition</th><th>Intérêt</th><th>Difficulté</th><th>Bénéfice</th></tr>
+        <tr><td>1</td><td class="what"><b>Analytics, Search Console, suivi d'appels</b><span>+ bannière cookies conforme CNIL</span></td><td>Voir qui visite, par quelle requête, et ce qui se transforme en appel — impossible à mesurer aujourd'hui.</td><td><span class="badge low">Faible</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>2</td><td class="what"><b>Nettoyage technique Google</b><span>sitemap, robots.txt, doublons, redirections des vieilles adresses</span></td><td>Google voit toutes les pages, comprend laquelle est la bonne, et récupère le poids des anciens liens.</td><td><span class="badge low">Faible</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>3</td><td class="what"><b>Titres, descriptions, H1</b><span>14 pages déjà rédigées, le reste sur le même modèle</span></td><td>L'action la plus rapide : le site commence à apparaître sur les services, pas que sur son nom.</td><td><span class="badge low">Faible</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>4</td><td class="what"><b>Vitesse mobile</b><span>cache, WebP, 1ᵉʳ visuel préchargé, lazy-load, un seul Open Sans</span></td><td>Objectif : premier bloc visible à 2,5 s au lieu de 12–15 s, écran qui ne saute plus.</td><td><span class="badge mid">Moyenne</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>5</td><td class="what"><b>Contact en un clic</b><span>téléphones cliquables, bouton "Urgence 24h/24" si applicable, formulaire avec type de demande</span></td><td>Plus d'appels et de devis sur le même trafic, sans rien ajouter côté SEO.</td><td><span class="badge low">Faible</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>6</td><td class="what"><b>Pages services dédiées</b><span>rebobinage, réparation moteur, dépannage urgent, pompes, analyse vibratoire, ATEX</span></td><td>Aujourd'hui Google n'a rien à montrer sur ces requêtes : ce sont les concurrents qui apparaissent à la place.</td><td><span class="badge mid">Moyenne</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>7</td><td class="what"><b>Pages par agence</b><span>Rouen, Caen, Évreux, Lille (Seclin)</span></td><td>Les requêtes "service + ville" sont les plus chaudes — et c'est là qu'ATB est le plus absent (Caen, Lille).</td><td><span class="badge mid">Moyenne</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>8</td><td class="what"><b>Fiches Google Maps / Bing et annuaires</b><span>revendiquer Caen, bonne catégorie partout, photos, collecte d'avis</span></td><td>Le bloc carte s'affiche au-dessus des résultats classiques — c'est ce qui convertit le plus vite sur les requêtes locales.</td><td><span class="badge low">Faible</span></td><td><span class="badge high">Élevé</span></td></tr>
+        <tr><td>9</td><td class="what"><b>Faits unifiés, preuves, données structurées</b><span>une seule version de l'ancienneté et du stock, numéros de certificats, 3–5 exemples de chantiers, JSON-LD Organization/LocalBusiness par agence</span></td><td>Rassure un acheteur qui vérifie un sous-traitant, et donne aux IA des faits cohérents à citer.</td><td><span class="badge low">Faible à moyenne</span></td><td><span class="badge mid">Moyen à élevé</span></td></tr>
+        <tr><td>10</td><td class="what"><b>Articles-guides et mentions sur sites partenaires</b><span>sous les questions clients réelles, publiés sur le site puis relayés (ABB, salons, LinkedIn)</span></td><td>C'est ce qui fait l'essentiel du trafic du leader du secteur, et ce que les IA citent le plus souvent en source.</td><td><span class="badge cont">Continu</span></td><td><span class="badge high">Élevé</span></td></tr>
+      </table>
+    </div>
+
+    <h3 class="rv sub-h" style="margin-top:36px">Textes déjà prêts pour la proposition 3 (exemple sur 14 pages rédigées)</h3>
+    <div class="glass rv" style="padding:22px;margin-top:14px;overflow-x:auto">
+      <table class="metrics-table">
+        <tr><th>Page</th><th>Titre</th><th>H1</th></tr>
+        <tr><td>Accueil</td><td>Réparation et rebobinage de moteurs électriques | ATB Groupe</td><td>Réparation de moteurs électriques industriels</td></tr>
+        <tr><td>Moteurs ATEX</td><td>Moteurs ATEX : réparation et vente | ATB Groupe</td><td>Réparation de moteurs ATEX certifiés</td></tr>
+        <tr><td>Variateurs de fréquence</td><td>Variateurs de fréquence : vente et SAV | ATB Groupe</td><td>Variateurs de fréquence pour l'industrie</td></tr>
+        <tr><td>Contact</td><td>Contacter ATB Groupe — 4 agences en France</td><td>Contactez votre agence ATB Groupe</td></tr>
+      </table>
+      <p style="margin-top:12px;font-size:14px;color:var(--muted)">+ 10 autres pages déjà rédigées dans le même format (titre, description, H1) — prêtes à poser dès l'accès au site.</p>
+    </div>
+
+    <div class="callout rv" style="margin-top:18px"><b>Sur la demande "vues éclatées et bibliothèques constructeur" :</b> chaque fiche produit (moteurs, variateurs) peut intégrer un schéma éclaté et un lien direct vers la documentation technique du fabricant (ABB, Nord, Leroy-Somer, WEG). Ça renforce la crédibilité technique des pages de la proposition 6 sans toucher au design général — exactement le type de contenu "en plus" évoqué dans le brief.</div>
+
+    <div class="callout rv" style="margin-top:14px"><b>Proposition 5, le détail :</b> aucun lien <code>tel:</code> sur les 32 pages, les boutons "Nous contacter" renvoient vers une URL technique (<code>/component/content/article/199-contactez-nous</code>), le seul formulaire est en bas de la page /contact avec un captcha "4 + 6 = ?", et l'urgence 24h/24 n'est mentionnée qu'une seule fois sur tout le site.</div>
+
+    <h3 class="rv sub-h" style="margin-top:36px">Combien de trafic chaque nouvelle page peut capter (estimation Ahrefs, recherches/mois)</h3>
+    <div class="glass rv" style="padding:22px;margin-top:14px;overflow-x:auto">
+      <table class="metrics-table">
+        <tr><th>Page</th><th>Potentiel</th></tr>
+        <tr><td>Analyse vibratoire (nouvelle)</td><td>~1 600</td></tr>
+        <tr><td>Rebobinage moteur électrique (nouvelle)</td><td>~960</td></tr>
+        <tr><td>Réparation moteur électrique (nouvelle)</td><td>~710</td></tr>
+        <tr><td>Réparation de pompe industrielle (nouvelle)</td><td>~160</td></tr>
+        <tr><td>Dépannage urgent 24h/24 (nouvelle)</td><td>~100</td></tr>
+        <tr><td>Moteurs et réparation ATEX (nouvelle)</td><td>~80</td></tr>
+        <tr><td>4 pages agences (nouvelles)</td><td>0–10 chacune, les plus "chaudes"</td></tr>
+        <tr><td>Pages existantes à renforcer (moteurs, variateurs, réducteurs, démarreurs, alternateurs)</td><td>~3 700 / 1 350 / 790 / 250 / 120 déjà en jeu</td></tr>
+        <tr><td>Pages marques — WEG, Siemens, ABB, Leroy-Somer (2ᵉ mois)</td><td>~500</td></tr>
+      </table>
+    </div>
+
+    <h3 class="rv sub-h" style="margin-top:36px">Comment on vérifiera chaque pari</h3>
+    <div class="glass rv" style="padding:22px;margin-top:14px;overflow-x:auto">
+      <table class="metrics-table">
+        <tr><th>Pari</th><th>Vérification</th></tr>
+        <tr><td>Catégorie/avis/fiches → carte Google à Caen et Lille</td><td>position carte + réponse ChatGPT, vérifiées chaque semaine</td></tr>
+        <tr><td>Pages service + ville → apparition sur des requêtes où le site est absent</td><td>impressions/clics dans Search Console, une fois branché</td></tr>
+        <tr><td>Titres/descriptions/H1 → apparition sur les services, pas que sur le nom</td><td>nombre de requêtes et d'impressions, Search Console</td></tr>
+        <tr><td>Faits unifiés + balisage → moins d'erreurs citées par les IA, plus de mentions hors ville</td><td>mêmes 10 questions reposées une fois par mois à ChatGPT / aperçus IA / Perplexity</td></tr>
+        <tr><td>Téléphone cliquable + formulaire court → plus de clics transformés en appel</td><td>clics téléphone/formulaire suivis dans l'analytics dès la 1ʳᵉ semaine</td></tr>
+      </table>
+    </div>
+    <p class="note rv" style="margin-top:14px">Si des demandes sont nécessaires dès la première semaine : option séparée de publicité Google sur les 10–15 requêtes "réparation moteur électrique" + ville, où aucune annonce ne tourne aujourd'hui — clic estimé entre 0,15 et 0,50 $ (Ahrefs). Service distinct, budget média et décision à la charge d'ATB.</p>
+
+    <div class="glass verdict rv" style="margin-top:16px">
+      <p><b>Limite technique à garder en tête :</b> le thème Shape5 "Charity" reste lourd par nature. Si, une fois les actions ci-dessus faites, la vitesse mobile reste dans le rouge, il faudra remplacer le thème par un plus léger — sans changer l'apparence. Dernier point : des polices sont chargées depuis les serveurs Google et il n'y a pas de bandeau cookies ; avant de brancher l'analytics (proposition 1), il faut ce bandeau pour rester conforme CNIL.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6bis. ARTICLES (detail de la proposition 10) -->
+<section id="articles" class="dark">
+  <div class="glow"></div>
+  <div class="water">Articles</div>
+  <div class="wrap">
+    <span class="tag rv">Proposition 10, en détail</span>
+    <h2 class="rv">Articles-guides<span class="lt">ce qui amène l'essentiel du trafic chez le leader du secteur</span></h2>
+    <div class="line"></div>
+    <p class="lead rv">Motralec doit l'essentiel de ses 4 500 visites/mois à des guides du type « montage étoile ou triangle » ou « qu'est-ce qu'un variateur de vitesse ». ATB peut écrire les mêmes, mais avec un vrai avantage : des techniciens qui réparent ces moteurs tous les jours, et une agence à citer en bas de chaque article.</p>
+
+    <div class="grid g2 how-art">
+      <div class="dk rv">
+        <h3>Comment on les écrit</h3>
+        <ul class="ok">
+          <li><b>Sous les vraies questions.</b> Titre et intertitres construits autour de ce que les clients tapent dans la recherche, pas autour du vocabulaire interne.</li>
+          <li><b>Réponse courte en premier.</b> C'est ce qui permet à Google et aux IA de reprendre l'extrait directement dans leurs réponses.</li>
+          <li><b>Lien vers la bonne page.</b> Un article sur le grillage d'un moteur renvoie vers la page « réparation moteur », un article sur le prix vers le formulaire de devis.</li>
+          <li><b>Vérifié par le technologue.</b> Les chiffres et les normes (CEI 60034-23, classes d'isolation, ISO 20816…) sont relus en interne avant publication.</li>
+        </ul>
+      </div>
+      <div class="dk rv d1">
+        <h3>Comment on démarre</h3>
+        <ol class="steps">
+          <li><b>D'abord 4 à 8 sujets prioritaires.</b> Ceux qui sont le plus proches d'une demande de devis.</li>
+          <li><b>On regarde ce qui marche.</b> Quels articles Google indexe, lesquels ramènent du trafic vers les pages services.</li>
+          <li><b>On enchaîne sur le reste de la liste.</b> Au rythme que permet la relecture technique — pas de date imposée.</li>
+        </ol>
+        <p class="team">Les 30 sujets déjà identifiés et classés par page de destination, ci-dessous. Les 8 en couleur sont les plus proches d'une demande de devis — on démarre par ceux-là.</p>
+      </div>
+    </div>
+
+    <div class="chips topics" style="margin-top:24px">
+      <span class="prio">Rebobinage moteur électrique : étapes, durée, avantages</span>
+      <span class="prio">Prix d'un rebobinage de moteur industriel</span>
+      <span class="prio">Rebobiner ou remplacer un moteur électrique : le calcul</span>
+      <span class="prio">Comment savoir si un moteur électrique est grillé</span>
+      <span class="prio">Moteur IE3 ou IE4 : différences et obligations</span>
+      <span class="prio">Démarreur progressif ou variateur de fréquence</span>
+      <span class="prio">Analyse vibratoire : principe, seuils ISO 20816</span>
+      <span class="prio">Réparer un moteur ATEX : ce qui est autorisé</span>
+      <span>Tester un moteur triphasé au multimètre et au mégohmmètre</span>
+      <span>Mesure d'isolement d'un moteur : valeurs et interprétation</span>
+      <span>Classes d'isolation F et H : quelle différence</span>
+      <span>Causes de grillage d'un moteur électrique</span>
+      <span>Moteur qui chauffe : causes et que faire</span>
+      <span>Norme CEI 60034-23 : ce qu'elle impose</span>
+      <span>Imprégnation sous vide : à quoi ça sert</span>
+      <span>Moteur haute tension : signes d'un défaut d'isolation</span>
+      <span>Règlement écoconception et moteurs industriels</span>
+      <span>Lire la plaque signalétique d'un moteur</span>
+      <span>Moteur asynchrone ou synchrone : les différences</span>
+      <span>Indices de protection IP55, IP65 : lequel choisir</span>
+      <span>Variateur en panne : causes fréquentes</span>
+      <span>Variateur de fréquence : avantages et économies d'énergie</span>
+      <span>Couplage étoile-triangle : principe</span>
+      <span>Maintenance prédictive ou préventive : la différence</span>
+      <span>Roulements de moteur : signes d'usure</span>
+      <span>Moteur ATEX : zones et marquage</span>
+      <span>CEE et moteurs industriels : ce qui est éligible</span>
+      <span>Alternateur industriel : pannes fréquentes</span>
+      <span>Réparation de pompe industrielle</span>
+      <span>Réducteur ou motoréducteur : comment choisir</span>
+    </div>
+    <p class="note rv" style="color:#c9a79d">Les articles vivent sur le site (rubrique Actualités, aujourd'hui vide — les nouvelles ne sont publiées que sur LinkedIn) puis sont relayés vers les partenaires déjà acquis (ABB, salons SEPEM et CFIA) et les sites qui citent déjà ATB.</p>
+  </div>
+</section>
+
+<!-- 7. PREUVES -->
+<section id="preuves" class="dark">
+  <div class="glow"></div>
+  <div class="water">Preuves</div>
+  <div class="wrap">
+    <span class="tag rv">Captures d'écran</span>
+    <h2 class="rv">Ce que les outils montrent<span class="lt">directement, sans interprétation</span></h2>
+    <div class="line"></div>
+    <p class="lead rv">Mesures prises le même jour, sur le site en production : Chrome DevTools (onglet Réseau et Performance), Google Lighthouse mobile et ordinateur, Security Headers (snyk.io) et le validateur W3C.</p>
+
+    <div class="shots">
+      <figure class="shot rv"><div class="bar-top"><i></i><i></i><i></i>Lighthouse mobile — Google PageSpeed</div><img src="img/proof-lighthouse-mobile.jpg" alt="Score Lighthouse mobile : 64 performance, LCP 12,0 s" loading="lazy"><figcaption><b>Mobile : 64 / 86 / 92 / 92</b>LCP 12,0 s, FCP 3,9 s — très au-dessus de l'objectif Google.</figcaption></figure>
+
+      <figure class="shot rv d1"><div class="bar-top"><i></i><i></i><i></i>Lighthouse ordinateur — Google PageSpeed</div><img src="img/proof-lighthouse-desktop.jpg" alt="Score Lighthouse ordinateur : 59 performance, LCP 2,6 s" loading="lazy"><figcaption><b>Ordinateur : 59 / 86 / 92 / 92</b>LCP 2,6 s — correct, mais l'essentiel du trafic industriel se fait sur mobile sur le terrain.</figcaption></figure>
+
+      <figure class="shot rv d2"><div class="bar-top"><i></i><i></i><i></i>Lighthouse — pistes d'amélioration (mobile)</div><img src="img/proof-lighthouse-insights-mobile.jpg" alt="Lighthouse Insights mobile : cache, images, décalages visuels" loading="lazy"><figcaption><b>Pistes mobile</b>Cache efficace (3 551 Ko à gagner), livraison d'images (1 562 Ko), décalages visuels à corriger.</figcaption></figure>
+
+      <figure class="shot rv d3"><div class="bar-top"><i></i><i></i><i></i>Lighthouse — pistes d'amélioration (ordinateur)</div><img src="img/proof-lighthouse-insights-desktop.jpg" alt="Lighthouse Insights ordinateur : requêtes bloquantes, JS ancien" loading="lazy"><figcaption><b>Pistes ordinateur</b>Requêtes bloquant l'affichage (2 590 ms à gagner), JavaScript ancien, polices mal affichées.</figcaption></figure>
+
+      <figure class="shot rv"><div class="bar-top"><i></i><i></i><i></i>DevTools → Performance, trace complète</div><img src="img/proof-performance-trace.jpg" alt="Trace de performance Chrome DevTools, marqueurs FCP/DCL/LCP" loading="lazy"><figcaption><b>Trace de chargement</b>3,67 Mo transférés pour afficher la page, marqueurs FCP / DCL / LCP visibles sur la frise.</figcaption></figure>
+
+      <figure class="shot rv d1"><div class="bar-top"><i></i><i></i><i></i>DevTools → Réseau, en-têtes de réponse</div><img src="img/proof-response-headers.jpg" alt="En-têtes HTTP de la page d'accueil, pas de cache, version PHP visible" loading="lazy"><figcaption><b>En-têtes HTTP</b><code>Cache-Control: no-store, no-cache</code>, deux en-têtes <code>X-Powered-By</code> qui révèlent PHP 8.3.36 et Plesk.</figcaption></figure>
+
+      <figure class="shot rv d2"><div class="bar-top"><i></i><i></i><i></i>securityheaders.com — scan atbgroupe.com</div><img src="img/proof-securityheaders.jpg" alt="Scan Security Headers : note D, cinq en-têtes de sécurité manquants" loading="lazy"><figcaption><b>Note D sur 6 en-têtes</b>Seul Strict-Transport-Security est présent ; CSP, X-Frame-Options, Referrer-Policy… sont absents.</figcaption></figure>
+
+      <figure class="shot rv d3"><div class="bar-top"><i></i><i></i><i></i>Validateur W3C — extrait des erreurs</div><img src="img/proof-w3c-validator.jpg" alt="Erreurs du validateur W3C : attributs d'image invalides, pas de H1" loading="lazy"><figcaption><b>Erreurs de code</b>Attributs d'image invalides et avertissement "aucun titre de niveau 1 (H1)" sur la page.</figcaption></figure>
+
+      <figure class="shot rv"><div class="bar-top"><i></i><i></i><i></i>DevTools → Réseau, scripts chargés</div><img src="img/proof-network-js.jpg" alt="Liste des scripts JavaScript chargés par la page d'accueil" loading="lazy"><figcaption><b>31 fichiers JS</b>jQuery UI, deux jeux Bootstrap, carrousel, popup — la plupart chargés sur chaque page, utile ou non.</figcaption></figure>
+
+      <figure class="shot rv d1"><div class="bar-top"><i></i><i></i><i></i>DevTools → Réseau, feuilles de style</div><img src="img/proof-network-css.jpg" alt="Liste des fichiers CSS chargés, Open Sans en plusieurs versions" loading="lazy"><figcaption><b>25 fichiers CSS</b>Font Awesome en double, Open Sans chargé plusieurs fois, Bootstrap complet pour quelques composants.</figcaption></figure>
+
+      <figure class="shot rv d2"><div class="bar-top"><i></i><i></i><i></i>DevTools → Réseau, images produits</div><img src="img/proof-network-images.jpg" alt="Liste des images produits chargées, plusieurs dizaines à plus de 150 Ko chacune" loading="lazy"><figcaption><b>Images non optimisées</b>Photos produits en JPEG natif, plusieurs au-delà de 150 Ko, sans variante WebP.</figcaption></figure>
+
+      <figure class="shot rv d3"><div class="bar-top"><i></i><i></i><i></i>DevTools → Réseau, résumé de la page</div><img src="img/proof-network-summary.jpg" alt="Résumé réseau : 95 requêtes, 3,7 Mo transférés" loading="lazy"><figcaption><b>95 requêtes, 3,7 Mo</b>Chargement complet (DOMContentLoaded) à 7,06 s sur la mesure du jour.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 8. BESOINS -->
+<section id="besoins">
+  <div class="water">Accès</div>
+  <div class="wrap">
+    <span class="tag rv">Ce dont on a besoin</span>
+    <h2 class="rv">Pour avancer<span class="lt">accès et quelques réponses</span></h2>
+    <div class="line"></div>
+    <div class="grid g2">
+      <div class="glass need rv">
+        <span class="nn">1</span>
+        <div><b>Accès Joomla et hébergement</b><p>Ou le contact du prestataire actuel si quelqu'un d'autre gère déjà le site.</p></div>
+      </div>
+      <div class="glass need rv d1">
+        <span class="nn">2</span>
+        <div><b>Compte Google de l'entreprise</b><p>Pour créer Search Console et vérifier/corriger les fiches Google Maps des 4 agences.</p></div>
+      </div>
+      <div class="glass need rv d1">
+        <span class="nn">3</span>
+        <div><b>Ahrefs et un suivi de position</b><p>Accès existant ou un abonnement (Ahrefs à partir de 129 $/mois) pour suivre l'évolution dans la durée.</p></div>
+      </div>
+    </div>
+
+    <h3 class="rv sub-h" style="margin-top:40px;text-align:left">Réponses à trancher avant d'écrire les pages</h3>
+    <ul class="qlist rv">
+      <li>Année de fondation exacte — quelle ancienneté afficher partout (le site dit actuellement 30, 40, 60 et 70 ans selon la page) ?</li>
+      <li>Stock exact : gamme de puissance et nombre de moteurs en stock ?</li>
+      <li>Existe-t-il une astreinte 24h/24 et 7j/7, avec quel numéro ?</li>
+      <li>Horaires et zone d'intervention de chaque agence ?</li>
+      <li>Dans quels pays l'entreprise travaille-t-elle en dehors de la France ?</li>
+      <li>Quels clients ou secteurs peut-on citer ? 3 à 5 exemples de chantiers avec photos ?</li>
+      <li>Numéros et dates des certificats MASE, Saqr-ATEX, ABB ?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9. QUI A FAIT CET AUDIT -->
+<section id="equipe" class="dark">
+  <div class="glow"></div>
+  <div class="water">Équipe</div>
+  <div class="wrap">
+    <span class="tag rv">Transparence</span>
+    <h2 class="rv">Qui a fait cet audit<span class="lt">et avec quels outils</span></h2>
+    <div class="line"></div>
+    <div class="grid g2" style="margin-top:10px">
+      <div class="dk rv">
+        <h3>Partie technique</h3>
+        <p>Réalisée en interne : lecture du code de la page, Chrome DevTools (Réseau, Performance), Google PageSpeed Insights, securityheaders.com et le validateur W3C. Toutes les captures de la section précédente viennent de ces outils, sur le site en production.</p>
+      </div>
+      <div class="dk rv d1">
+        <h3>Partie SEO</h3>
+        <p>Je ne suis pas spécialiste du référencement — cette partie a été préparée avec un ami spécialiste SEO, à l'aide de ses outils (Ahrefs, recherches sur google.fr, interrogation de ChatGPT et des aperçus IA de Google). Les chiffres de trafic et de volume de recherche sont des estimations Ahrefs, pas des données Search Console du site : nous n'y avons pas encore accès.</p>
+      </div>
+    </div>
+    <p class="note rv joke" style="margin-top:18px">Ce que ce document ne couvre pas : l'accès à Search Console et à la statistique réelle du site (proposition 1 justement), et tout ce qui touche au planning ou au chiffrage du temps de travail — on en reparle séparément une fois les propositions passées en revue ensemble. (Et si on vous demande pourquoi cette page est aussi soignée : disons que le style vient de ma future entreprise de rêve 😄.)</p>
+  </div>
+</section>
+
+<footer>
+  <b>Audit ATB Groupe</b> · technique + SEO + IA · document de travail interne
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
