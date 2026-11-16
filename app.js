@@ -23,15 +23,21 @@
     else io.observe(el);
   });
 
-  var links = Array.prototype.slice.call(document.querySelectorAll('.dots a'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.dots a, .dots-m a'));
   var map = {};
-  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    (map[id] = map[id] || []).push(a);
+  });
   var so = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (!e.isIntersecting) return;
       links.forEach(function (a) { a.classList.remove('on'); });
-      var a = map[e.target.id];
-      if (a) a.classList.add('on');
+      var active = map[e.target.id];
+      if (active) active.forEach(function (a) {
+        a.classList.add('on');
+        if (a.closest('.dots-m')) a.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      });
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
   document.querySelectorAll('section[id]').forEach(function (s) { so.observe(s); });
